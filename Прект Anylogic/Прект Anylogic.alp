@@ -878,7 +878,7 @@ i++;
 						<Parameter>
 							<Name><![CDATA[Остановки]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[{ busStop, busStop1, busStop2, busStop3, busStop4, busStop5, busStop6, busStop7, busStop8, busStop9, busStop10, busStop11, busStop12, busStop13, busStop14, busStop15, busStop16, busStop17, busStop18, busStop19, busStop20, busStop21, busStop22, busStop23, busStop24, busStop25, busStop26, busStop27, busStop28, busStop29, busStop30, busStop31, busStop32, busStop33, busStop34, busStop35, busStop36, busStop37, busStop38, busStop39, busStop40, busStop41, busStop42, busStop43, busStop44, busStop45, busStop46, busStop47 }]]></Code>
+								<Code><![CDATA[{ busStop, busStop1, busStop2, busStop3, busStop4, busStop5, busStop6, busStop7, busStop8, busStop9, busStop10, busStop11, busStop12, busStop13, busStop14, busStop15, busStop16, busStop17, busStop18, busStop19, busStop20, busStop21, busStop22, busStop23, busStop24, busStop25, busStop26, busStop27, busStop28, busStop29, busStop30, busStop31, busStop32, busStop33, busStop34, busStop35, busStop36, busStop37, busStop38, busStop39, busStop40, busStop41, busStop42, busStop43, busStop44, busStop45, busStop46, busStop47, busStop48 }]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -1097,18 +1097,34 @@ i++;
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[length]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[7]]></Code>
+								<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[initialSpeed]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[20]]></Code>
+								<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[preferredSpeed]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maxAcceleration]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[2]]></Code>
+								<Unit Class="AccelerationUnits"><![CDATA[MPS_SQ]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maxDeceleration]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[0.1]]></Code>
+								<Unit Class="AccelerationUnits"><![CDATA[MPS_SQ]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[addCarToCustomPopulation]]></Name>
@@ -1280,565 +1296,7 @@ i++;
 					<SignalStateAnimationVisible>true</SignalStateAnimationVisible>
 
 			<Shapes>
-				<Road SourceId="1496829851346">
-					<Id>1496828370434</Id>
-					<Name><![CDATA[RoadB]]></Name>
-					<X>2881.973</X><Y>859.3650000000001</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<DelimiterWidth Class="UnitValue">
-						<Value Class="Double">
-							0
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</DelimiterWidth>
-					<RoadDelimiterColor>-16744448</RoadDelimiterColor>
-					<RoadDelimiterMaterial>null</RoadDelimiterMaterial>
-					<ForwardLanesCount>1</ForwardLanesCount>
-					<Bidirectional>false</Bidirectional>
-					<BackwardLanesCount>2</BackwardLanesCount>
-					<Points>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>12.502</X><Y>-27.315</Y><Z>0</Z></Point>
-						<Point><X>-5.256</X><Y>24.441</Y><Z>0</Z></Point>
-						<Point><X>-2.373</X><Y>11.035</Y><Z>0</Z></Point>
-						<Point><X>2.883711556506758</X><Y>-13.406092111681268</Y><Z>0</Z></Point>
-						<Point><X>22.121</X><Y>16.04</Y><Z>0</Z></Point>
-						<Point><X>118.027</X><Y>35.635</Y><Z>0</Z></Point>
-						<Point><X>93.533</X><Y>30.630000000000003</Y><Z>0</Z></Point>
-						<Point><X>121.128</X><Y>60.442</Y><Z>0</Z></Point>
-						<Point><X>123.02699999999999</X><Y>75.63500000000002</Y><Z>0</Z></Point>
-						<Point><X>119.92599999999999</X><Y>50.827999999999996</Y><Z>0</Z></Point>
-						<Point><X>147.316</X><Y>81.55600000000003</Y><Z>0</Z></Point>
-						<Point><X>307.627</X><Y>120.63500000000002</Y><Z>0</Z></Point>
-						<Point><X>283.33799999999997</X><Y>114.71400000000001</Y><Z>0</Z></Point>
-						<Point><X>331.226</X><Y>128.885</Y><Z>0</Z></Point>
-						<Point><X>356.827</X><Y>137.83499999999998</Y><Z>0</Z></Point>
-						<Point><X>333.228</X><Y>129.58499999999998</Y><Z>0</Z></Point>
-						<Point><X>357.01599999999996</X><Y>162.834</Y><Z>0</Z></Point>
-						<Point><X>357.227</X><Y>190.635</Y><Z>0</Z></Point>
-						<Point><X>357.038</X><Y>165.636</Y><Z>0</Z></Point>
-						<Point><X>352.061</X><Y>215.096</Y><Z>0</Z></Point>
-						<Point><X>343.627</X><Y>255.035</Y><Z>0</Z></Point>
-						<Point><X>348.793</X><Y>230.57399999999998</Y><Z>0</Z></Point>
-						<Point><X>325.854</X><Y>272.6170000000001</Y><Z>0</Z></Point>
-						<Point><X>120.42699999999999</X><Y>475.83500000000004</Y><Z>0</Z></Point>
-						<Point><X>138.20000000000002</X><Y>458.25300000000004</Y><Z>0</Z></Point>
-						<Point><X>100.73399999999998</X><Y>460.43500000000006</Y><Z>0</Z></Point>
-						<Point><X>-141.97299999999998</X><Y>270.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-122.28000000000002</X><Y>286.035</Y><Z>0</Z></Point>
-						<Point><X>-156.833</X><Y>290.73900000000003</Y><Z>0</Z></Point>
-						<Point><X>-182.773</X><Y>325.83500000000004</Y><Z>0</Z></Point>
-						<Point><X>-167.91299999999998</X><Y>305.73100000000005</Y><Z>0</Z></Point>
-						<Point><X>-206.874</X><Y>332.47900000000004</Y><Z>0</Z></Point>
-						<Point><X>-381.57300000000004</X><Y>380.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-357.47200000000004</X><Y>373.99100000000004</Y><Z>0</Z></Point>
-						<Point><X>-399.25100000000003</X><Y>398.31300000000005</Y><Z>0</Z></Point>
-						<Point><X>-499.173</X><Y>498.23500000000007</Y><Z>0</Z></Point>
-						<Point><X>-481.495</X><Y>480.5570000000001</Y><Z>0</Z></Point>
-						<Point><X>-516.978</X><Y>480.68600000000004</Y><Z>0</Z></Point>
-						<Point><X>-693.573</X><Y>306.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-675.7679999999999</X><Y>324.184</Y><Z>0</Z></Point>
-						<Point><X>-711.189</X><Y>324.374</Y><Z>0</Z></Point>
-						<Point><X>-751.173</X><Y>364.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-733.5569999999999</X><Y>346.8960000000001</Y><Z>0</Z></Point>
-						<Point><X>-776.173</X><Y>364.708</Y><Z>0</Z></Point>
-						<Point><X>-1435.5729999999999</X><Y>366.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-1410.5729999999999</X><Y>366.56200000000007</Y><Z>0</Z></Point>
-						<Point><X>-1460.55</X><Y>365.5570000000001</Y><Z>0</Z></Point>
-						<Point><X>-1667.173</X><Y>356.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-1642.196</X><Y>357.713</Y><Z>0</Z></Point>
-						<Point><X>-1687.2367382844534</X><Y>341.7203626912029</Y><Z>0</Z></Point>
-						<Point><X>-1676.177</X><Y>349.942</Y><Z>0</Z></Point>
-						<Point><X>-1656.113</X><Y>364.857</Y><Z>0</Z></Point>
-						<Point><X>-1696.24</X><Y>335.02700000000004</Y><Z>0</Z></Point>
-						<Point><X>-1712.373</X><Y>323.035</Y><Z>0</Z></Point>
-						<Point><X>-1692.309</X><Y>337.95000000000005</Y><Z>0</Z></Point>
-						<Point><X>-1730.436</X><Y>305.75100000000003</Y><Z>0</Z></Point>
-						<Point><X>-1767.973</X><Y>269.83500000000004</Y><Z>0</Z></Point>
-						<Point><X>-1749.91</X><Y>287.119</Y><Z>0</Z></Point>
-						<Point><X>-1783.796</X><Y>289.19</Y><Z>0</Z></Point>
-						<Point><X>-1812.773</X><Y>324.63500000000005</Y><Z>0</Z></Point>
-						<Point><X>-1796.95</X><Y>305.28000000000003</Y><Z>0</Z></Point>
-						<Point><X>-1837.7549999999999</X><Y>325.596</Y><Z>0</Z></Point>
-						<Point><X>-1906.373</X><Y>328.235</Y><Z>0</Z></Point>
-						<Point><X>-1881.391</X><Y>327.274</Y><Z>0</Z></Point>
-						<Point><X>-1931.353</X><Y>329.242</Y><Z>0</Z></Point>
-						<Point><X>-1955.973</X><Y>330.23500000000007</Y><Z>0</Z></Point>
-						<Point><X>-1930.993</X><Y>329.22800000000007</Y><Z>0</Z></Point>
-						<Point><X>-1985.973</X><Y>350.23500000000007</Y><Z>0</Z></Point>
-					</Points>
-
-			<Shapes>
-				<BusStop>
-					<Id>1496831497054</Id>
-					<Name><![CDATA[busStop26]]></Name>
-					<X>3075</X><Y>958.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>250.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831506167</Id>
-					<Name><![CDATA[busStop27]]></Name>
-					<X>3191</X><Y>985.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>370.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831522472</Id>
-					<Name><![CDATA[busStop28]]></Name>
-					<X>3193.5</X><Y>1140.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>575.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831531302</Id>
-					<Name><![CDATA[busStop29]]></Name>
-					<X>3072.5</X><Y>1261</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>745.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831551237</Id>
-					<Name><![CDATA[busStop30]]></Name>
-					<X>2994.882</X><Y>1322.85</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>865.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831565198</Id>
-					<Name><![CDATA[busStop31]]></Name>
-					<X>2880</X><Y>1234</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1010.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831610626</Id>
-					<Name><![CDATA[busStop32]]></Name>
-					<X>2783.632</X><Y>1158.106</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1130.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831640269</Id>
-					<Name><![CDATA[busStop33]]></Name>
-					<X>2582.401</X><Y>1213.127</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1370.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831712927</Id>
-					<Name><![CDATA[busStop34]]></Name>
-					<X>2497.5</X><Y>1241.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1460.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831740917</Id>
-					<Name><![CDATA[busStop35]]></Name>
-					<X>2374.208</X><Y>1341.747</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1640.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831783694</Id>
-					<Name><![CDATA[busStop36]]></Name>
-					<X>2245.5</X><Y>1226.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1815.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831791294</Id>
-					<Name><![CDATA[busStop37]]></Name>
-					<X>2155</X><Y>1209</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>1950.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831800969</Id>
-					<Name><![CDATA[busStop38]]></Name>
-					<X>2049</X><Y>1222</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2060.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831804368</Id>
-					<Name><![CDATA[busStop39]]></Name>
-					<X>1961</X><Y>1224.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2150.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831810749</Id>
-					<Name><![CDATA[busStop40]]></Name>
-					<X>1834.952</X><Y>1222.047</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2275.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831831816</Id>
-					<Name><![CDATA[busStop41]]></Name>
-					<X>1607</X><Y>1222</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2500.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831834199</Id>
-					<Name><![CDATA[busStop42]]></Name>
-					<X>1536</X><Y>1224.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2575.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831846212</Id>
-					<Name><![CDATA[busStop43]]></Name>
-					<X>1351.207</X><Y>1220.098</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2760.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831877684</Id>
-					<Name><![CDATA[busStop44]]></Name>
-					<X>1212</X><Y>1212</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>2900.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831886316</Id>
-					<Name><![CDATA[busStop45]]></Name>
-					<X>1108.5</X><Y>1136.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>3035.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831897286</Id>
-					<Name><![CDATA[busStop46]]></Name>
-					<X>1033.5</X><Y>1189.5</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>3135.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-				<BusStop>
-					<Id>1496831904118</Id>
-					<Name><![CDATA[busStop47]]></Name>
-					<X>970</X><Y>1185</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>3200.0</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<Length Class="UnitValue">
-						<Value Class="Double">
-							20
-						</Value>
-						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-					</Length>
-				</BusStop>
-
-			</Shapes>
-
-				</Road>
-
-				<RoadJunction>
-					<Id>1496829851346</Id>
-					<Name><![CDATA[intersection]]></Name>
-					<X>2882.513</X><Y>856.8560000000001</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<FakeNode>true</FakeNode>
-
-			<Shapes>
-				<LaneConnector SourceId="1496828454678" TargetId="1496828370434">
-					<Id>1496829851446</Id>
-					<Name><![CDATA[laneConnector1]]></Name>
-					<X>2883.9216855860564</X><Y>859.7381159855723</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-1.4086855860564356</X><Y>-2.882115985572227</Y></Point>
-						<Point><X>1.8777857992299687</X><Y>-9.822113850501296</Y></Point>
-						<Point><X>-3.830637566238238</X><Y>-0.777939105733708</Y></Point>
-						<Point><X>-1.7282682378499885</X><Y>-10.554443757553258</Y></Point>
-						<Point><X>-3.830637566238238</X><Y>-0.777939105733708</Y></Point>
-						<Point><X>-3.830662731531902</X><Y>-0.7778220812870131</Y></Point>
-						<Point><X>-3.830662731531902</X><Y>-0.7778220812870131</Y></Point>
-						<Point><X>-1.4086855860564356</X><Y>-2.882115985572227</Y></Point>
-					</Points>
-					<SourceLane>0</SourceLane>
-					<TargetLane>0</TargetLane>
-				</LaneConnector>
-
-			</Shapes>
-
-				</RoadJunction>
-
-				<Road TargetId="1496829851346">
+				<Road TargetId="1497527108883">
 					<Id>1496828454678</Id>
 					<Name><![CDATA[RoadA]]></Name>
 					<X>926.0000116653605</X><Y>1190.3997378071451</Y>
@@ -1928,38 +1386,13 @@ i++;
 						<Point><X>2050.0009883346397</X><Y>-300.8807378071453</Y><Z>0</Z></Point>
 						<Point><X>1954</X><Y>-320.4</Y><Z>0</Z></Point>
 						<Point><X>1978.499</X><Y>-315.419</Y><Z>0</Z></Point>
-						<Point><X>1958.694</X><Y>-344.955</Y><Z>0</Z></Point>
-						<Point><X>1956.0309170044743</X><Y>-331.0230955879245</Y><Z>0</Z></Point>
-						<Point><X>1951.3364525063996</X><Y>-306.4678109616711</Y><Z>0</Z></Point>
-						<Point><X>1950.4999883346395</X><Y>-354.3997378071453</Y><Z>0</Z></Point>
+						<Point><X>1958.11</X><Y>-345.06</Y><Z>0</Z></Point>
+						<Point><X>1958.5780425992496</X><Y>-347.8682555954975</Y><Z>0</Z></Point>
+						<Point><X>1954.4680679166156</X><Y>-323.20840749969386</Y><Z>0</Z></Point>
+						<Point><X>1953.469</X><Y>-373.776</Y><Z>0</Z></Point>
 					</Points>
 
 			<Shapes>
-				<RoadStopline>
-					<Id>1496829851467</Id>
-					<Name><![CDATA[stopLine]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Offset>3431.043570546641</Offset>
-					<OnForwardSide>true</OnForwardSide>
-					<LeftLane>1</LeftLane>
-					<RightLane>0</RightLane>
-					<Junction>1496829851346</Junction>
-					<StartSpeedLimitSign>false</StartSpeedLimitSign>
-					<SpeedLimitValue Class="UnitValue">
-						<Value Class="Double">
-							40
-						</Value>
-						<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
-					</SpeedLimitValue>
-					<YieldSign>false</YieldSign>
-					<EndOfSpeedLimitSign>false</EndOfSpeedLimitSign>
-				</RoadStopline>
-
 				<BusStop>
 					<Id>1496830140321</Id>
 					<Name><![CDATA[busStop]]></Name>
@@ -2454,6 +1887,608 @@ i++;
 					</Length>
 				</BusStop>
 
+				<BusStop>
+					<Id>1497527077145</Id>
+					<Name><![CDATA[busStop26]]></Name>
+					<X>2884.22</X><Y>865.296</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>3430.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							13.636363636363635
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<RoadStopline>
+					<Id>1497527108896</Id>
+					<Name><![CDATA[stopLine]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>3448.0752283894885</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<LeftLane>1</LeftLane>
+					<RightLane>0</RightLane>
+					<Junction>1497527108883</Junction>
+					<StartSpeedLimitSign>false</StartSpeedLimitSign>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">
+							40
+						</Value>
+						<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
+					</SpeedLimitValue>
+					<YieldSign>false</YieldSign>
+					<EndOfSpeedLimitSign>false</EndOfSpeedLimitSign>
+				</RoadStopline>
+
+			</Shapes>
+
+				</Road>
+
+				<RoadJunction>
+					<Id>1497527108883</Id>
+					<Name><![CDATA[intersection]]></Name>
+					<X>2885.0000116653605</X><Y>839.9997378071452</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>true</FakeNode>
+
+			<Shapes>
+				<LaneConnector SourceId="1496828454678" TargetId="1496828370434">
+					<Id>1497527108892</Id>
+					<Name><![CDATA[laneConnector1]]></Name>
+					<X>2886.4768625679867</X><Y>842.8479502622105</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-1.4768509026262109</X><Y>-2.8482124550653225</Y></Point>
+						<Point><X>1.6439898730536697</X><Y>-9.86393923832145</Y></Point>
+						<Point><X>-3.8211644367047484</X><Y>-0.6577823511884162</Y></Point>
+						<Point><X>-2.0722692666286093</X><Y>-10.50366299662005</Y></Point>
+						<Point><X>-3.8211644367047484</X><Y>-0.6577823511884162</Y></Point>
+						<Point><X>-3.821194592232132</X><Y>-0.6576125824499286</Y></Point>
+						<Point><X>-3.821194592232132</X><Y>-0.6576125824499286</Y></Point>
+						<Point><X>-1.4768509026262109</X><Y>-2.8482124550653225</Y></Point>
+					</Points>
+					<SourceLane>0</SourceLane>
+					<TargetLane>0</TargetLane>
+				</LaneConnector>
+
+			</Shapes>
+
+				</RoadJunction>
+
+				<Road SourceId="1497527108883">
+					<Id>1496828370434</Id>
+					<Name><![CDATA[RoadB]]></Name>
+					<X>2884.551</X><Y>842.5270000000002</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<DelimiterWidth Class="UnitValue">
+						<Value Class="Double">
+							0
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</DelimiterWidth>
+					<RoadDelimiterColor>-16744448</RoadDelimiterColor>
+					<RoadDelimiterMaterial>null</RoadDelimiterMaterial>
+					<ForwardLanesCount>1</ForwardLanesCount>
+					<Bidirectional>false</Bidirectional>
+					<BackwardLanesCount>2</BackwardLanesCount>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>12.951</X><Y>-29.842000000000002</Y><Z>0</Z></Point>
+						<Point><X>-4.372</X><Y>24.615</Y><Z>0</Z></Point>
+						<Point><X>-4.9510000000000005</X><Y>27.872999999999998</Y><Z>0</Z></Point>
+						<Point><X>-0.5786550635431273</X><Y>3.2583173947613107</Y><Z>0</Z></Point>
+						<Point><X>19.543</X><Y>32.878</Y><Z>0</Z></Point>
+						<Point><X>115.449</X><Y>52.473</Y><Z>0</Z></Point>
+						<Point><X>90.955</X><Y>47.468</Y><Z>0</Z></Point>
+						<Point><X>118.55</X><Y>77.28</Y><Z>0</Z></Point>
+						<Point><X>120.44899999999998</X><Y>92.47300000000001</Y><Z>0</Z></Point>
+						<Point><X>117.34799999999998</X><Y>67.666</Y><Z>0</Z></Point>
+						<Point><X>144.73800000000003</X><Y>98.39400000000002</Y><Z>0</Z></Point>
+						<Point><X>305.04900000000004</X><Y>137.47300000000004</Y><Z>0</Z></Point>
+						<Point><X>280.76</X><Y>131.55200000000002</Y><Z>0</Z></Point>
+						<Point><X>328.648</X><Y>145.723</Y><Z>0</Z></Point>
+						<Point><X>354.249</X><Y>154.673</Y><Z>0</Z></Point>
+						<Point><X>330.65000000000003</X><Y>146.423</Y><Z>0</Z></Point>
+						<Point><X>354.438</X><Y>179.67200000000003</Y><Z>0</Z></Point>
+						<Point><X>354.649</X><Y>207.473</Y><Z>0</Z></Point>
+						<Point><X>354.46000000000004</X><Y>182.47400000000002</Y><Z>0</Z></Point>
+						<Point><X>349.483</X><Y>231.93400000000003</Y><Z>0</Z></Point>
+						<Point><X>341.04900000000004</X><Y>271.873</Y><Z>0</Z></Point>
+						<Point><X>346.21500000000003</X><Y>247.412</Y><Z>0</Z></Point>
+						<Point><X>323.276</X><Y>289.4550000000001</Y><Z>0</Z></Point>
+						<Point><X>117.84899999999999</X><Y>492.67300000000006</Y><Z>0</Z></Point>
+						<Point><X>135.62200000000004</X><Y>475.09100000000007</Y><Z>0</Z></Point>
+						<Point><X>98.15599999999998</X><Y>477.2730000000001</Y><Z>0</Z></Point>
+						<Point><X>-144.55099999999996</X><Y>287.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-124.85800000000002</X><Y>302.87300000000005</Y><Z>0</Z></Point>
+						<Point><X>-159.41099999999997</X><Y>307.57700000000006</Y><Z>0</Z></Point>
+						<Point><X>-185.35099999999997</X><Y>342.67300000000006</Y><Z>0</Z></Point>
+						<Point><X>-170.49099999999996</X><Y>322.5690000000001</Y><Z>0</Z></Point>
+						<Point><X>-209.45199999999997</X><Y>349.31700000000006</Y><Z>0</Z></Point>
+						<Point><X>-384.151</X><Y>397.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-360.05</X><Y>390.82900000000006</Y><Z>0</Z></Point>
+						<Point><X>-401.829</X><Y>415.15100000000007</Y><Z>0</Z></Point>
+						<Point><X>-501.751</X><Y>515.073</Y><Z>0</Z></Point>
+						<Point><X>-484.073</X><Y>497.3950000000001</Y><Z>0</Z></Point>
+						<Point><X>-519.556</X><Y>497.52400000000006</Y><Z>0</Z></Point>
+						<Point><X>-696.1510000000001</X><Y>323.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-678.346</X><Y>341.02200000000005</Y><Z>0</Z></Point>
+						<Point><X>-713.767</X><Y>341.21200000000005</Y><Z>0</Z></Point>
+						<Point><X>-753.7510000000001</X><Y>381.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-736.135</X><Y>363.7340000000001</Y><Z>0</Z></Point>
+						<Point><X>-778.7510000000001</X><Y>381.54600000000005</Y><Z>0</Z></Point>
+						<Point><X>-1438.1509999999998</X><Y>383.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-1413.1509999999998</X><Y>383.4000000000001</Y><Z>0</Z></Point>
+						<Point><X>-1463.128</X><Y>382.3950000000001</Y><Z>0</Z></Point>
+						<Point><X>-1669.751</X><Y>373.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-1644.774</X><Y>374.55100000000004</Y><Z>0</Z></Point>
+						<Point><X>-1689.8147382844534</X><Y>358.55836269120294</Y><Z>0</Z></Point>
+						<Point><X>-1678.7549999999999</X><Y>366.78000000000003</Y><Z>0</Z></Point>
+						<Point><X>-1658.691</X><Y>381.69500000000005</Y><Z>0</Z></Point>
+						<Point><X>-1698.818</X><Y>351.86500000000007</Y><Z>0</Z></Point>
+						<Point><X>-1714.951</X><Y>339.87300000000005</Y><Z>0</Z></Point>
+						<Point><X>-1694.887</X><Y>354.78800000000007</Y><Z>0</Z></Point>
+						<Point><X>-1733.014</X><Y>322.58900000000006</Y><Z>0</Z></Point>
+						<Point><X>-1770.551</X><Y>286.67300000000006</Y><Z>0</Z></Point>
+						<Point><X>-1752.488</X><Y>303.95700000000005</Y><Z>0</Z></Point>
+						<Point><X>-1786.374</X><Y>306.028</Y><Z>0</Z></Point>
+						<Point><X>-1815.3509999999999</X><Y>341.47300000000007</Y><Z>0</Z></Point>
+						<Point><X>-1799.528</X><Y>322.11800000000005</Y><Z>0</Z></Point>
+						<Point><X>-1840.3329999999999</X><Y>342.434</Y><Z>0</Z></Point>
+						<Point><X>-1908.951</X><Y>345.07300000000004</Y><Z>0</Z></Point>
+						<Point><X>-1883.969</X><Y>344.112</Y><Z>0</Z></Point>
+						<Point><X>-1933.931</X><Y>346.08000000000004</Y><Z>0</Z></Point>
+						<Point><X>-1958.551</X><Y>347.0730000000001</Y><Z>0</Z></Point>
+						<Point><X>-1933.571</X><Y>346.0660000000001</Y><Z>0</Z></Point>
+						<Point><X>-1988.551</X><Y>367.0730000000001</Y><Z>0</Z></Point>
+					</Points>
+
+			<Shapes>
+				<BusStop>
+					<Id>1496831497054</Id>
+					<Name><![CDATA[busStop27]]></Name>
+					<X>3075</X><Y>958.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>250.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831506167</Id>
+					<Name><![CDATA[busStop28]]></Name>
+					<X>3191</X><Y>985.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>370.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831522472</Id>
+					<Name><![CDATA[busStop29]]></Name>
+					<X>3193.5</X><Y>1140.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>575.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831531302</Id>
+					<Name><![CDATA[busStop30]]></Name>
+					<X>3072.5</X><Y>1261</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>745.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831551237</Id>
+					<Name><![CDATA[busStop31]]></Name>
+					<X>2995.356</X><Y>1329.608</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>875.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831565198</Id>
+					<Name><![CDATA[busStop32]]></Name>
+					<X>2880</X><Y>1234</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1010.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831610626</Id>
+					<Name><![CDATA[busStop33]]></Name>
+					<X>2783.632</X><Y>1158.106</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1130.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831640269</Id>
+					<Name><![CDATA[busStop34]]></Name>
+					<X>2582.401</X><Y>1213.127</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1370.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831712927</Id>
+					<Name><![CDATA[busStop35]]></Name>
+					<X>2525.447</X><Y>1228.92</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1445.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831740917</Id>
+					<Name><![CDATA[busStop36]]></Name>
+					<X>2375.625</X><Y>1350.93</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1650.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831783694</Id>
+					<Name><![CDATA[busStop37]]></Name>
+					<X>2245.5</X><Y>1226.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1815.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831791294</Id>
+					<Name><![CDATA[busStop38]]></Name>
+					<X>2155</X><Y>1209</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>1950.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831800969</Id>
+					<Name><![CDATA[busStop39]]></Name>
+					<X>2049</X><Y>1222</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2060.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831804368</Id>
+					<Name><![CDATA[busStop40]]></Name>
+					<X>1961</X><Y>1224.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2150.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831810749</Id>
+					<Name><![CDATA[busStop41]]></Name>
+					<X>1834.952</X><Y>1222.047</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2275.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831831816</Id>
+					<Name><![CDATA[busStop42]]></Name>
+					<X>1607</X><Y>1222</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2500.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831834199</Id>
+					<Name><![CDATA[busStop43]]></Name>
+					<X>1536</X><Y>1224.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2575.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831846212</Id>
+					<Name><![CDATA[busStop44]]></Name>
+					<X>1351.207</X><Y>1220.098</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2760.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831877684</Id>
+					<Name><![CDATA[busStop45]]></Name>
+					<X>1240.758</X><Y>1216.245</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>2885.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831886316</Id>
+					<Name><![CDATA[busStop46]]></Name>
+					<X>1133.277</X><Y>1144.82</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>3020.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831897286</Id>
+					<Name><![CDATA[busStop47]]></Name>
+					<X>1033.5</X><Y>1189.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>3135.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
+				<BusStop>
+					<Id>1496831904118</Id>
+					<Name><![CDATA[busStop48]]></Name>
+					<X>970</X><Y>1185</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Offset>3200.0</Offset>
+					<OnForwardSide>true</OnForwardSide>
+					<Length Class="UnitValue">
+						<Value Class="Double">
+							20
+						</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Length>
+				</BusStop>
+
 			</Shapes>
 
 				</Road>
@@ -2554,6 +2589,50 @@ i++;
 					<Id>1497276071029</Id>
 					<Name><![CDATA[text5]]></Name>
 					<X>680</X><Y>1510</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[text]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1497526439566</Id>
+					<Name><![CDATA[text6]]></Name>
+					<X>680</X><Y>1530</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[text]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1497526899728</Id>
+					<Name><![CDATA[text7]]></Name>
+					<X>680</X><Y>1550</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3187,32 +3266,6 @@ i++;
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1497086088138</Id>
-					<Name><![CDATA[connector7]]></Name>
-					<X>367</X><Y>193</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[прект_anylogic]]></PackageName>
-						<ClassName><![CDATA[Маршрут]]></ClassName>
-						<ItemName><![CDATA[selectOutput1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[SelectOutput]]></ClassName>
-						<ItemName><![CDATA[outT]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetId>1497086088124</TargetId>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>35</X><Y>0</Y></Point>
-						<Point><X>35</X><Y>-100</Y></Point>
-						<Point><X>-129</X><Y>-100</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1497086088140</Id>
 					<Name><![CDATA[connector8]]></Name>
 					<X>357</X><Y>203</Y>
@@ -3246,6 +3299,32 @@ i++;
 						<Point><X>-309</X><Y>110</Y></Point>
 						<Point><X>-309</X><Y>-10</Y></Point>
 						<Point><X>-269</X><Y>-10</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1497528474064</Id>
+					<Name><![CDATA[connector1]]></Name>
+					<X>189</X><Y>93</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceId>1497086088124</SourceId>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[прект_anylogic]]></PackageName>
+						<ClassName><![CDATA[Маршрут]]></ClassName>
+						<ItemName><![CDATA[selectOutput1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>49</X><Y>0</Y></Point>
+						<Point><X>212</X><Y>0</Y></Point>
+						<Point><X>212</X><Y>100</Y></Point>
+						<Point><X>178</X><Y>100</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -3348,6 +3427,12 @@ i++;
 								<Code><![CDATA[int a = 0; // Начальное значение диапазона - "от"
 int b = 10; // Конечное значение диапазона - "до"
 
+if(car.KollBusStop == 27||car.KollBusStop == 49)
+{
+car.passenger=0;
+car.newPassenger=0;
+}
+else{
 //Пассажиры выходят
 int rnd = a + (int) (Math.random() * b);
 if(car.passenger >= rnd)
@@ -3375,12 +3460,16 @@ car.profit+=rnd * 3.5;
 car.obslPassenger+=rnd;
 car.newPassenger=rnd;
 }
+}
 car.distance += car.getDistanceDriven()*3/1000;
 car.resetDistanceDriven();
 main.text1.setText("Расстояние = " + car.distance + " км");
 main.text2.setText("Прибыль = " + car.profit + " руб.");
 main.text3.setText("Пассажиров в маршрутке = " + car.passenger + " человек");
-main.text4.setText("Обслужено пассажиров = " + car.obslPassenger + " человек");]]></Code>
+main.text4.setText("Обслужено пассажиров = " + car.obslPassenger + " человек");
+main.text6.setText("Расход топлива = " + car.rasxodFuel + " л/100км");
+main.text7.setText("Топлива в баке = " + (car.fuel-(car.distance/car.rasxodFuel)) + " литров");
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
