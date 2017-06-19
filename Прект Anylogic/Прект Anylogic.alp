@@ -6677,7 +6677,7 @@ main1.text7.setText("Потрачено топлива = " + car.distance/car.ra
 	</Database>	
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
-		<SimulationExperiment ActiveObjectClassId="1497857069410">
+		<SimulationExperiment ActiveObjectClassId="1493107563523">
 			<Id>1493107563600</Id>
 			<Name><![CDATA[Simulation]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
