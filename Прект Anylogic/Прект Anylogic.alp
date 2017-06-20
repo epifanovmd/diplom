@@ -487,7 +487,7 @@
 											<Name><![CDATA[distance]]></Name>
 										</Parameter>
 										<Parameter>
-											<Name><![CDATA[fuel]]></Name>
+											<Name><![CDATA[Fuel]]></Name>
 										</Parameter>
 										<Parameter>
 											<Name><![CDATA[passenger]]></Name>
@@ -667,8 +667,8 @@
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[excelFile.setCellValue(car.distance, 1, parameter, 1);
-excelFile.setCellValue(car.distance/car.rasxodFuel, 1, parameter, 2);
-excelFile.setCellValue((car.distance/car.rasxodFuel)*ЦенаТоплива, 1, parameter, 3);
+excelFile.setCellValue(car.Fuel, 1, parameter, 2);
+excelFile.setCellValue(car.Fuel*ЦенаТоплива, 1, parameter, 3);
 excelFile.setCellValue(car.profit, 1, parameter, 4);
 excelFile.setCellValue(time()/60, 1, parameter, 5);
 excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
@@ -2337,8 +2337,8 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1493109583062</Id>
-					<Name><![CDATA[fuel]]></Name>
-					<X>50</X><Y>90</Y>
+					<Name><![CDATA[Fuel]]></Name>
+					<X>150</X><Y>110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2363,7 +2363,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1493109598458</Id>
 					<Name><![CDATA[passenger]]></Name>
-					<X>160</X><Y>50</Y>
+					<X>50</X><Y>110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2388,7 +2388,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1496917392420</Id>
 					<Name><![CDATA[rasxodFuel]]></Name>
-					<X>160</X><Y>90</Y>
+					<X>150</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2413,7 +2413,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1497086096659</Id>
 					<Name><![CDATA[KollBusStop]]></Name>
-					<X>160</X><Y>130</Y>
+					<X>150</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2438,7 +2438,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1497268983801</Id>
 					<Name><![CDATA[profit]]></Name>
-					<X>50</X><Y>130</Y>
+					<X>50</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2463,7 +2463,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1497270058908</Id>
 					<Name><![CDATA[vmestimost]]></Name>
-					<X>350</X><Y>50</Y>
+					<X>150</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2488,7 +2488,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1497274016565</Id>
 					<Name><![CDATA[obslPassenger]]></Name>
-					<X>50</X><Y>170</Y>
+					<X>50</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2513,7 +2513,7 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 				<Variable Class="Parameter">
 					<Id>1497275585367</Id>
 					<Name><![CDATA[newPassenger]]></Name>
-					<X>160</X><Y>170</Y>
+					<X>50</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2996,52 +2996,41 @@ excelFile.setCellValue(car.obslPassenger, 1, parameter, 6);]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[int a = 0; // Начальное значение диапазона - "от"
 int b = 10; // Конечное значение диапазона - "до"
-
-if(car.KollBusStop == 27||car.KollBusStop == 49)
-{
-car.passenger=0;
-car.newPassenger=0;
-}
-else{
+if (car.KollBusStop == 27 || car.KollBusStop == 49) {
+ car.passenger = 0;
+ car.newPassenger = 0;
+} else {
 //Пассажиры выходят
-int rnd = a + (int) (Math.random() * b);
-if(car.passenger >= rnd)
-{
-car.passenger-=rnd;
-}
-else
-{
-car.passenger=0;
-}
+ int rnd = a + (int)(Math.random() * b);
+ if (car.passenger >= rnd) {
+  car.passenger -= rnd;
+ } else {car.passenger = 0;}
 //Пассажиры заходят
-rnd = a + (int) (Math.random() * b);
-if(car.passenger + rnd  <= car.vmestimost)
-{
-car.passenger+=rnd;
-car.profit+=rnd * main.ЦенаПроезда;
-car.obslPassenger+=rnd;
-car.newPassenger=rnd;
+ rnd = a + (int)(Math.random() * b);
+ if (car.passenger + rnd <= car.vmestimost) {
+  car.passenger += rnd;
+  car.profit += rnd * main.ЦенаПроезда;
+  car.obslPassenger += rnd;
+  car.newPassenger = rnd;
+ } else {
+  rnd = car.vmestimost - car.passenger;
+  car.passenger += rnd;
+  car.profit += rnd * main.ЦенаПроезда;
+  car.obslPassenger += rnd;
+  car.newPassenger = rnd;
+ }
 }
-else
-{
-rnd = car.vmestimost - car.passenger;
-car.passenger+=rnd;
-car.profit+=rnd * main.ЦенаПроезда;
-car.obslPassenger+=rnd;
-car.newPassenger=rnd;
-}
-}
-car.distance += car.getDistanceDriven()*3/1000;
+car.Fuel += ((car.getDistanceDriven() * 3 / 1000)/100)*(car.rasxodFuel+car.passenger*0.2);
+car.distance += car.getDistanceDriven() * 3 / 1000;
 car.resetDistanceDriven();
-
 
 main.text1.setText("Расстояние = " + car.distance + " км");
 main.text2.setText("Прибыль = " + car.profit + " руб.");
 main.text3.setText("Пассажиров в маршрутке = " + car.passenger + " человек");
 main.text4.setText("Обслужено пассажиров = " + car.obslPassenger + " человек");
-main.text5.setText("Время в пути = " + time()/60 + " минут");
-main.text6.setText("Расход топлива = " + car.rasxodFuel + " л/100км");
-main.text7.setText("Потрачено топлива = " + car.distance/car.rasxodFuel + " литров");]]></Code>
+main.text5.setText("Время в пути = " + time() / 60 + " минут");
+main.text6.setText("Расход топлива = " + (car.rasxodFuel+car.passenger*0.2) + " л/100км");
+main.text7.setText("Потрачено топлива = " + car.Fuel + " литров");]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3974,7 +3963,7 @@ main.text7.setText("Потрачено топлива = " + car.distance/car.ras
 											<Name><![CDATA[distance]]></Name>
 										</Parameter>
 										<Parameter>
-											<Name><![CDATA[fuel]]></Name>
+											<Name><![CDATA[Fuel]]></Name>
 										</Parameter>
 										<Parameter>
 											<Name><![CDATA[passenger]]></Name>
@@ -4154,8 +4143,8 @@ main.text7.setText("Потрачено топлива = " + car.distance/car.ras
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[excelFile.setCellValue(car.distance, 2, parameter, 1);
-excelFile.setCellValue(car.distance/car.rasxodFuel, 2, parameter, 2);
-excelFile.setCellValue((car.distance/car.rasxodFuel)*ЦенаТоплива, 2, parameter, 3);
+excelFile.setCellValue(car.Fuel, 2, parameter, 2);
+excelFile.setCellValue(car.Fuel*ЦенаТоплива, 2, parameter, 3);
 excelFile.setCellValue(car.profit, 2, parameter, 4);
 excelFile.setCellValue(time()/60, 2, parameter, 5);
 excelFile.setCellValue(car.obslPassenger, 2, parameter, 6);]]></Code>
@@ -6084,52 +6073,41 @@ excelFile.setCellValue(car.obslPassenger, 2, parameter, 6);]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[int a = 0; // Начальное значение диапазона - "от"
 int b = 10; // Конечное значение диапазона - "до"
-
-if(car.KollBusStop == 27||car.KollBusStop == 44)
-{
-car.passenger=0;
-car.newPassenger=0;
-}
-else{
+if (car.KollBusStop == 27 || car.KollBusStop == 44) {
+ car.passenger = 0;
+ car.newPassenger = 0;
+} else {
 //Пассажиры выходят
-int rnd = a + (int) (Math.random() * b);
-if(car.passenger >= rnd)
-{
-car.passenger-=rnd;
-}
-else
-{
-car.passenger=0;
-}
+ int rnd = a + (int)(Math.random() * b);
+ if (car.passenger >= rnd) {
+  car.passenger -= rnd;
+ } else {car.passenger = 0;}
 //Пассажиры заходят
-rnd = a + (int) (Math.random() * b);
-if(car.passenger + rnd  <= car.vmestimost)
-{
-car.passenger+=rnd;
-car.profit+=rnd * main1.ЦенаПроезда;
-car.obslPassenger+=rnd;
-car.newPassenger=rnd;
+ rnd = a + (int)(Math.random() * b);
+ if (car.passenger + rnd <= car.vmestimost) {
+  car.passenger += rnd;
+  car.profit += rnd * main1.ЦенаПроезда;
+  car.obslPassenger += rnd;
+  car.newPassenger = rnd;
+ } else {
+  rnd = car.vmestimost - car.passenger;
+  car.passenger += rnd;
+  car.profit += rnd * main1.ЦенаПроезда;
+  car.obslPassenger += rnd;
+  car.newPassenger = rnd;
+ }
 }
-else
-{
-rnd = car.vmestimost - car.passenger;
-car.passenger+=rnd;
-car.profit+=rnd * main1.ЦенаПроезда;
-car.obslPassenger+=rnd;
-car.newPassenger=rnd;
-}
-}
-car.distance += car.getDistanceDriven()*3/1000;
+car.Fuel += ((car.getDistanceDriven() * 3 / 1000)/100)*(car.rasxodFuel+car.passenger*0.2);
+car.distance += car.getDistanceDriven() * 3 / 1000;
 car.resetDistanceDriven();
-
 
 main1.text1.setText("Расстояние = " + car.distance + " км");
 main1.text2.setText("Прибыль = " + car.profit + " руб.");
 main1.text3.setText("Пассажиров в маршрутке = " + car.passenger + " человек");
 main1.text4.setText("Обслужено пассажиров = " + car.obslPassenger + " человек");
-main1.text5.setText("Время в пути = " + time()/60 + " минут");
-main1.text6.setText("Расход топлива = " + car.rasxodFuel + " л/100км");
-main1.text7.setText("Потрачено топлива = " + car.distance/car.rasxodFuel + " литров");]]></Code>
+main1.text5.setText("Время в пути = " + time() / 60 + " минут");
+main1.text6.setText("Расход топлива = " + (car.rasxodFuel+car.passenger*0.2) + " л/100км");
+main1.text7.setText("Потрачено топлива = " + car.Fuel + " литров");]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -6677,7 +6655,7 @@ main1.text7.setText("Потрачено топлива = " + car.distance/car.ra
 	</Database>	
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
-		<SimulationExperiment ActiveObjectClassId="1493107563523">
+		<SimulationExperiment ActiveObjectClassId="1497857069410">
 			<Id>1493107563600</Id>
 			<Name><![CDATA[Simulation]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
